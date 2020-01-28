@@ -5,8 +5,8 @@ class libro:
     def escribir(self):
       
         archivo= open("archivo.txt","a+")
-        archivo.write(libro1.titulo + "\n")
-        archivo.write(libro1.autor + "\n")
+        archivo.write("Titulo: "+libro1.titulo + " " +"Autor: "+libro1.autor + "\n")
+    
      
 libro1=libro()
 libro1.titulo=(input('escriba un libro '))     
