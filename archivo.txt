@@ -10,3 +10,12 @@ la llorona camila
 TituloEl quijote AutorMiguel de Cervantes
 Titulo pedro paramo Autor calderon de la barca
 Titulo: 100 años de soledad Autor: gabriel garcia marquez
+Titulo: el alquimista Autor: paulo cohelo
+Titulo: camino Autor: garcia marquez
+Titulo: Si puede no vaya Autor: Antonio Sitges
+Titulo: Reina Roja Autor: Juan gomez
+Titulo: Loba Negra Autor: Juan Gomez-jurado
+Titulo: Sidi Autor: Arturo Perez Reverte
+Titulo: El infinito en un junco Autor: Irene Vallejo
+Titulo: La cara norte del corazon Autor: Dolores redondo
+Titulo: Una España Mejor Autor: Mariano Rajoy
