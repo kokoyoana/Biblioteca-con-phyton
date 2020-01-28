@@ -16,3 +16,4 @@ libro1.titulo=(input('escriba un libro '))
 libro1.autor=input('escriba el autor ')
 libro1.escribir()
 libro1.leer()
+
