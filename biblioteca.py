@@ -15,9 +15,9 @@ class libro:
    
     def sobre(self):
         a=input('escriba un titulo ')
-        archivo= open('archivo.txt')
+        archivo= open('archivo.txt').readlines()
   
-        if a==archivo.readlines(archivo) :
+        if a!=archivo :
            print('esta repetido')
         else:
            print('libro guardado')
