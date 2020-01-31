@@ -14,17 +14,12 @@ class libro:
         
    
     def sobre(self):
-        a=input('escriba un titulo ')
-       
-        archivo=str(open("archivo.txt").readlines())
-        a.count(archivo)
-  
-        if(archivo.find(a)):
-           print('repetido')
-        elif(self.titulo.archivo):
-            print('no esta')  
-
-         
+        archivo=str(open("archivo.txt","r").readlines())
+        x=input('escribe')
+        if x in archivo:
+            print('esta')
+        else:
+            print('no esta')
          
          
 
