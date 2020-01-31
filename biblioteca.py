@@ -15,11 +15,13 @@ class libro:
    
     def sobre(self):
         a=input('escriba un titulo ')
+       
         archivo=str(open("archivo.txt").readlines())
-        archivo.count(a)
+        a.count(archivo)
+  
         if(archivo.find(a)):
            print('repetido')
-        else:
+        elif(self.titulo.archivo):
             print('no esta')  
 
          
@@ -27,9 +29,10 @@ class libro:
          
 
 libro1= libro() 
-libro1.titulo=(input('escriba un libro '))     
-libro1.autor=input('escriba el autor ')
+libro1.titulo=(input('escriba un libro ').casefold())     
+libro1.autor=input('escriba el autor '.casefold())
 libro1.escribir()
 libro1.leer()
 libro1.sobre()
+
 
