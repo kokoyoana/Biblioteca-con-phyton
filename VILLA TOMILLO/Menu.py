@@ -24,6 +24,7 @@ class Menu:
                 
             if entrada_usuario == 1:
                 self.libro1.escribir()
+                
 
             elif entrada_usuario == 2:
                 print("hello")
