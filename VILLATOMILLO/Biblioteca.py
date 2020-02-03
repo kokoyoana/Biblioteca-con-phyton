@@ -3,11 +3,11 @@ class Libro:
     autor=''
     
     def escribir(self):
-        self.titulo=(input('escriba un libro '))
+        self.titulo=(input('escriba un libro ').casefold())  
         if self.existe():
                 print("El Libro Ya esta en la Biblioteca")
         else:
-                self.autor=(input('escriba el autor '))
+                self.autor=(input('escriba el autor ').casefold())  
                 archivo= open("archivo.txt","a+")
                 archivo.write("Titulo: "+self.titulo + " " +"Autor: "+ self.autor + "\n")
             
