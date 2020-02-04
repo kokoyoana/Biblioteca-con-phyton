@@ -19,7 +19,7 @@ class libro:
         archivo=str(open("archivo.txt","r").readlines())
         x=input('escribe')
         if x in archivo:
-            print('esta')
+           del x
         else:
             print('no esta')
             
@@ -28,6 +28,8 @@ class libro:
        b=input('que titulo buscas')
        archivo.index(b)
        print('lo encontro')
+       
+  
          
 
 libro1= libro() 
