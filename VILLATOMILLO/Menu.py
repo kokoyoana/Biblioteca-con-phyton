@@ -29,7 +29,7 @@ class Menu:
     
                 
             elif entrada_usuario == 2:
-                self.libro1.leer()
+                self.libro1.consultar()
             
             elif entrada_usuario == 3:
                 self.libro1.buscar()
