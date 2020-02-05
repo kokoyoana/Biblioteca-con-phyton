@@ -4,7 +4,7 @@ class Libro:
     
     def escribir(self):
         self.titulo = (input('Escriba un libro ').casefold())  
-        if self.existe():
+        if self.newexiste():
                 print("El libro ya está en la Biblioteca")
         else:
                 self.autor = (input('Escriba el autor ').casefold())  
@@ -32,5 +32,23 @@ class Libro:
             print('El libro "' + b + '" ESTÁ en la Biblioteca.')
         else:
             print('El libro "' + b + '" NO EXISTE en la Biblioteca.')
+            
+    def newexist(self):
+        archivo = open ("archivo.txt", "r") 
+        palabra = input("Que Libro deseas? ")
+        linea = " "
+        count = 1
+        existe= False
+        while (linea):
+            linea = archivo.readline()
+            L = linea.split()
+            if palabra in L:
+                print("Se Encuentra en ", count, ":", linea)
+                count += 1
+                existe=True
+        if existe==False:
+            print("No existe")
+        archivo.close()
+                
 
         
