@@ -16,13 +16,13 @@ class Libro:
         if existe == False:
             self.autor = (input('Escriba el autor '))
             archivo = open("archivo.txt","a+")
-            archivo.write("Titulo: "+ self.titulo + " " + "Autor: " + self.autor + "\n")
+            archivo.write(self.titulo + "; " + "autor: " + self.autor + "\n")
         archivo.close()
             
     def consultar(self):
         archivo = open("archivo.txt","r")
         print(archivo.read())
-        
+
     def buscar(self):
         archivo = open("archivo.txt", "r")
         palabra = input("¿Qué libro deseas? ")
@@ -31,7 +31,7 @@ class Libro:
         existe = False
         while(linea):
             linea = archivo.readline()
-            L = linea.split()
+            L = linea.split("; ")
             if palabra in L:
                 print("Se encuentra en ", count, ":", linea)
                 count += 1
@@ -39,7 +39,7 @@ class Libro:
         if existe == False:
             print("No existe")
         archivo.close()
-     
+
     def eliminar(self):
         archivo = open("archivo.txt", "r")
         lineas = archivo.readlines()#lineas en un array / 
