@@ -15,13 +15,8 @@ class libro:
         
         
    
-    def sobre(self):
-        archivo=str(open("archivo.txt","r").readlines())
-        x=input('escribe')
-        if x in archivo:
-           del x
-        else:
-            print('no esta')
+    
+        
             
     def buscar(self):
        archivo=str(open("archivo.txt","r").readlines()) 
@@ -29,7 +24,22 @@ class libro:
        archivo.index(b)
        print('lo encontro')
        
-  
+    def newexist(self):
+        archivo = open ("archivo.txt", "r") 
+        palabra = input("Que Libro deseas? ")
+        linea = " "
+        count = 1
+        existe= False
+        while (linea):
+            linea = archivo.readline()
+            L = linea.split()
+            if palabra in L:
+                print("Se Encuentra en ", count, ":", linea)
+                count += 1
+                existe=True
+        if existe==False:
+            print("No existe")
+        archivo.close()
          
 
 libro1= libro() 
@@ -37,7 +47,6 @@ libro1.titulo=(input('escriba un libro ').casefold())
 libro1.autor=input('escriba el autor '.casefold())
 libro1.escribir()
 libro1.leer()
-libro1.sobre()
 libro1.buscar()
-
+libro1.newexist()
 
