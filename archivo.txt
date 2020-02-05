@@ -145,3 +145,5 @@ Titulo: ww Autor: ww
 Titulo: fff Autor: fff
 Titulo: sss Autor: ss
 Titulo: ss Autor: ss
+Titulo: pepesito y ellos Autor: jose
+Titulo: wwewe Autor: wewe
