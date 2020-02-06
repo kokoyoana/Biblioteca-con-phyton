@@ -3,7 +3,7 @@ class Libro:
     autor=''
 
     def escribir(self):
-        archivo = open("archivo.txt", "r")
+        archivo = open("archivo.txt", "w+")
         self.titulo = input('Escriba un libro ')
         linea = " "
         existe = False
