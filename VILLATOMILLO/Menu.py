@@ -26,16 +26,18 @@ class Menu:
                 
             if entrada_usuario == 1:
                 self.libro1.escribir()
-    
-                
+                                
             elif entrada_usuario == 2:
                 self.libro1.consultar()
+                self.libro1.validar()
             
             elif entrada_usuario == 3:
                 self.libro1.buscar()
+                self.libro1.validar()
 
             elif entrada_usuario == 4:
                 self.libro1.eliminar()
+                self.libro1.validar()
 
             elif entrada_usuario == 0:
                 print("✿◕‿◕✿  ❀◕‿◕❀---¡Hasta luego! Vuelva pronto---✿◕‿◕✿  ❀◕‿◕❀")
